@@ -3,13 +3,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 200px;
   font-size: 16px;
+  font-family: "Kumbh Sans";
 }
 
 .container{
   background-color: black;
+  position: relative;
+  top: 150px;
   height: 30rem;
   width: 25rem;
   display: grid;
@@ -22,8 +23,24 @@ body{
   grid-column: 1/ span 3;
   background-color: blue;
 }
+
+.background2 {
+  grid-row: 2 / span 1;
+  grid-column: 1/ span 3;
+  background-color: white;
+  display: flex;
+}
+
+.background3 {
+  grid-row: 3 / span 1;
+  grid-column: 1/ span 3;
+  background-color: white;
+  display: inline-flex;
+  border-top: .5px solid hsl(0, 0%, 59%);
+}
 .profilepic {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
+  overflow: hidden;
 }
