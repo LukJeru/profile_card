@@ -7,6 +7,8 @@ body{
   font-family: "Kumbh Sans";
 }
 
+/*element*/
+
 .container{
   background-color: black;
   position: relative;
@@ -16,12 +18,18 @@ body{
   display: grid;
   grid-template-rows: 2fr 2fr 1fr;
   grid-template-columns: repeat(3, 1fr);
+  border: none;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .background1 {
   grid-row: 1 / span 1;
   grid-column: 1/ span 3;
   background-color: blue;
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .background2 {
@@ -29,18 +37,64 @@ body{
   grid-column: 1/ span 3;
   background-color: white;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .background3 {
   grid-row: 3 / span 1;
   grid-column: 1/ span 3;
   background-color: white;
-  display: inline-flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   border-top: .5px solid hsl(0, 0%, 59%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
+#item1{
+  grid-row: 1 /span 1;
+  grid-column: 1/ span 1;
+}
+
+#item2{
+  grid-row: 2 /span 1;
+  grid-column: 1/ span 1;
+}
+
+#item3{
+  grid-row: 1 /span 1;
+  grid-column: 2/ span 1;
+}
+
+#item4{
+  grid-row: 2 /span 1;
+  grid-column: 2/ span 1;
+}
+
+#item5{
+  grid-row: 1 /span 1;
+  grid-column: 3/ span 1;
+}
+
+#item6{
+  grid-row: 2 /span 1;
+  grid-column: 3/ span 1;
+}
+
 .profilepic {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   overflow: hidden;
+}
+
+/*text*/
+
+.bold{
+  font-weight: 700;
 }
